@@ -1,0 +1,18 @@
+<div class="container" [ngClass]="class" [class.textArea]="isTextArea">
+  <div class="description" *ngIf="title">
+    <ion-label>
+      {{ title }}
+    </ion-label>
+  </div>
+  <p *ngIf="prefix" class="prefix">{{ prefix }}</p>
+  <ion-input *ngIf="!dummyControl && !isTextArea && !isSelect" [formControl]="control" [ngClass]="inputClass" [class.prefix-input]="prefix" [type]="type"
+    [placeholder]="placeholder"></ion-input>
+  <ion-input *ngIf="dummyControl && !isTextArea && !isSelect" [ngClass]="inputClass" [class.prefix-input]="prefix" [type]="type"
+    [placeholder]="placeholder"></ion-input>
+  <ion-textarea *ngIf="isTextArea && !isSelect" [formControl]="control" [ngClass]="inputClass" autoGrow="true"
+    [placeholder]="placeholder"
+  ></ion-textarea>
+  <select *ngIf="isSelect && !isTextArea" [formControl]="control">
+     <option *ngFor="let item of optionsSelect" [value]="item">{{item}}</option>
+  </select>
+</div>

@@ -1,0 +1,41 @@
+<div class="header">
+  <app-button *ngIf="isRoute(mobileRoute)" class="cursor" slot="start"
+    buttonClass="header-logo polaroid i-logo-polaroid"
+    (click)="goToRoute(landingRoute)"
+  ></app-button>
+  <app-button *ngIf="isRoute(spraypaintRoute)" class="cursor" slot="start"
+    buttonClass="header-logo color-palette i-logo-color-palette"
+    (click)="goToRoute(landingRoute)"
+  ></app-button>
+  <app-button *ngIf="isRoute(aboutRoute)" class="cursor" slot="start"
+    buttonClass="header-logo color-palette i-logo-masterball"
+    (click)="goToRoute(landingRoute)"
+  ></app-button>
+  <app-button *ngIf="isRoute(loginRoute)" class="cursor" slot="start"
+    buttonClass="header-logo color-palette i-logo-1up"
+    (click)="goToRoute(landingRoute)"
+  ></app-button>
+  <app-button *ngIf="isRoute(newpostRoute)" class="cursor" slot="start"
+    buttonClass="header-logo polaroid i-logo-ruppee"
+    (click)="goToRoute(landingRoute)"
+  ></app-button>
+  <ion-title class= "header-title">
+    <div (click)="goToRoute('landing')" class="header-wrapper">
+      {{ headerTitle }}
+    </div>
+  </ion-title>
+  <div class="user-options" *ngIf="authService.isUserLogged|async">
+    <!-- <app-button buttonClass="header-logo peepo-icon i-peepo-icon"></app-button> -->
+    <p class="user-greetings">¡ Bienvenido, {{ authService.userr?.displayName }} !</p>
+    <app-button
+      [buttonClass]="newPostButtonDescription.buttonClass"
+      [label]="newPostButtonDescription.label"
+      (click)="goToRoute(newpostRoute)"
+    ></app-button>
+    <app-button
+      [buttonClass]="logoutButtonDescription.buttonClass"
+      [label]="logoutButtonDescription.label"
+      (click)="logoutUser()"
+    ></app-button>
+  </div>
+</div>

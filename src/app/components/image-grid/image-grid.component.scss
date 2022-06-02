@@ -1,0 +1,32 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    max-width: 100%;
+    background: url('../../../assets/bg-dark-grain.png') top left repeat;
+    @media (min-width: 799px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media (min-width: 1199px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    @media (min-width: 1439px) {
+      grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+.masonry-grid {
+  background: url('../../../assets/bg-dark-grain.png') top left repeat;
+  padding: 7px 1px;
+  column-count: 2;
+  column-gap: 5px;
+  @media (min-width: 768px) {
+    column-count: 3;
+  }
+  @media (min-width: 992px) {
+    column-count: 4;
+  }
+  @media (min-width: 1199px) {
+    column-count: 5;
+  }
+}

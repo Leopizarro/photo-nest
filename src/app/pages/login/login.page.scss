@@ -1,0 +1,56 @@
+.container {
+    border-radius: 8px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+    height: 340px;
+    margin: 6rem auto 5rem auto;
+    width: 340px;
+    background-color: white transparent;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(2.1px);
+    -webkit-backdrop-filter: blur(2.1px);
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.card-body {
+    padding: 12px 44px 40px 44px;
+}
+
+.card-header {
+    font-family: "Raleway Thin", sans-serif;
+    letter-spacing: 4px;
+    padding-bottom: 15px;
+    padding-top: 13px;
+    text-align: center;
+}
+
+.page-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: url('../../../assets/background3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+input {
+    padding-left: 5px;
+    width: 100%;
+    border: 2px solid var(--ion-color-dark-04);
+    background-color: white;
+    border-radius: 8px;
+    color: black;
+    &.valid-input { border: 2px solid var(--ion-color-success-01); }
+    &.invalid-input { border: 2px solid var(--ion-color-error-01); }
+    &.prefix-input { --padding-start: 41px; }
+}
+
+.input-container {
+    margin: 20px 0px;
+    width: 100%;
+}
+
+.label {
+    float: left;
+}

@@ -1,0 +1,24 @@
+<div class="lightbox-wrapper">
+  <app-slider-navigation class="navigation" (direction)="changeSlide($event)"></app-slider-navigation>
+  <div class="info-btn">
+    <app-button [buttonClass]="'modal-gallery-option-button i-textbox-icon'" (click)="triggerInfobox()"></app-button>
+  </div>
+  <div class="close-btn">
+    <app-button [buttonClass]="'modal-gallery-option-button i-close-icon'" (click)="dismissModal()">asd</app-button>
+  </div>
+  <ion-slides #slides class="slides primary-bullets banner-slides" pager="true" [options]="sliderOptions">
+    <ion-slide *ngFor="let photo of imagesForModal">
+      <div class="slider-container">
+        <img class="image" [src]='photo.imgUrl' alt="ImagenModal">
+        <app-info-box
+          *ngIf="enableInfobox"
+          [isSpraypaintInfoBox]="isSprayGallery"
+          [title]="photo.title"
+          [subtitle]="photo.subtitle"
+          [description]="photo.description"
+          [date]="photo.date"
+          ></app-info-box>
+      </div>
+    </ion-slide>
+  </ion-slides>
+</div>

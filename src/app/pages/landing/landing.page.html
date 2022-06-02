@@ -1,0 +1,20 @@
+<ion-content [fullscreen]="true" class="landing-container">
+  <div class="half-box">
+    <app-button 
+      [buttonClass]="spraypaintButton.buttonClass"
+      (clickEvent)="routeClick(spraypaintRoute)"
+      [label]="spraypaintButton.label"
+      [buttonTextClass]="spraypaintButton.buttonTextClass"
+      [isLandingButton]="true"
+    ></app-button>
+  </div>
+  <div class="half-box">
+    <app-button 
+      [buttonClass]="mobileButton.buttonClass"
+      (clickEvent)="routeClick(mobileRoute)"
+      [label]="mobileButton.label"
+      [buttonTextClass]="mobileButton.buttonTextClass"
+      [isLandingButton]="true"
+    ></app-button>
+  </div>
+</ion-content>

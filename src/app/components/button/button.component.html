@@ -1,0 +1,5 @@
+<button (click)="emitClickEvent()" [disabled]="isDisabled" [ngClass]="buttonClass">
+  <ion-icon *ngIf="icon" [ngClass]="icon"></ion-icon>
+  <p *ngIf="isLandingButton" [ngClass]="buttonTextClass"><a class="effect-underline">{{ label }}</a></p>
+  <p *ngIf="!isLandingButton" [ngClass]="buttonTextClass">{{ label }}</p>
+</button>

@@ -1,0 +1,115 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+    // -------------Images-------------
+.background-no-repeat { background-repeat: no-repeat;  background-position: center;}
+
+.i-logo-polaroid { @extend .background-no-repeat; background-image: url(./assets/polaroid_logo.png); }
+
+.i-logo-ruppee { @extend .background-no-repeat; background-image: url(./assets/ruppee.png); }
+
+.i-logo-1up { @extend .background-no-repeat; background-image: url(./assets/1up.png); }
+
+.i-logo-masterball { @extend .background-no-repeat; background-image: url(./assets/masterball.png);}
+
+.i-logo-color-palette { @extend .background-no-repeat; background-image: url(./assets/color_palette_logo.png);}
+
+.i-landing-spraypaint-background { @extend .background-no-repeat; background-image: url(./assets/cans.jpg)}
+
+.i-landing-cellphone-background { @extend .background-no-repeat; background-image: url(./assets/s21ultra.jpg);}
+
+.i-close-icon { @extend .background-no-repeat; background-image: url(./assets/close.png);}
+
+.i-textbox-icon { @extend .background-no-repeat; background-image: url(./assets/textbox-icon.png);}
+
+
+     //---------------------Fonts----------------------
+
+@font-face {
+    font-family: "m42";
+    src: url("./assets/fonts/m42.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "nasalization";
+    src: url("./assets/fonts/nasalization-rg.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Westwood-font";
+    src: url("./assets/fonts/Westwood\ Studio.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Fire-Flight";
+    src: url("./assets/fonts/Fire-Flight.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cinzel-font";
+    src: url("./assets/fonts/Cinzel-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Barbar-font";
+    src: url("./assets/fonts/Barbar.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Walkway";
+    src: url("./assets/fonts/Walkway.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+ion-modal::part(content) {
+    --position: fixed;
+    --z-index: 1031;
+    --background-opacity: 0.1;
+    --width: 100%;
+    --height: 100%;
+    --top: 0;
+    --left: 0;
+    --right: 0;
+    --bottom: 0;
+}
+
+ion-content {
+    --background: url('./assets/bg-dark-grain.png') top left repeat;
+}

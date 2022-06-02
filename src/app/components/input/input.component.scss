@@ -1,0 +1,55 @@
+.prefix {
+    position: absolute;
+    color: var(--ion-color-dark-00);
+    font: 14px var(--ion-font-family);
+    margin: 12px 0 0 9px;
+}
+
+
+.container {
+width: 100%;
+padding: 0;
+margin: 16px 0;
+.description {
+    margin-bottom: 5px;
+    .help-info {
+    background-color: var(--ion-color-info-02);
+    height: 13px;
+    width: 13px;
+    margin: inherit inherit -3px 3px;
+    &.modal { display: none; }
+    &.popover { display: inline-block; }
+    }
+}
+}
+
+ion-input {
+    width: 100%;
+    padding: 12px 0 0 0;
+    border: 2px solid var(--ion-color-dark-04);
+    background-color: white;
+    border-radius: 8px;
+    color: black;
+    --padding-start: 12px;
+    --padding-end: 36px;
+    --placeholder-font-style: 14px var(--ion-font-family);
+    --placeholder-color: var(--ion-color-dark-03);
+    &.valid-input { border: 2px solid var(--ion-color-success-01); }
+    &.invalid-input { border: 2px solid var(--ion-color-error-01); }
+    &.prefix-input { --padding-start: 41px; }
+  }
+  ion-textarea {
+    background-color: white;
+    width: 100%;
+    height: 102px;
+    border: 2px solid var(--ion-color-dark-04);
+    border-radius: 8px;
+    color: var(--ion-color-dark-00);
+    font: 14px var(--ion-font-family);
+    resize: none;
+    max-width: 632px;
+    min-height: 43px;
+    overflow: hidden;
+    &.valid-input { border: 2px solid var(--ion-color-success-01); }
+    &.invalid-input { border: 2px solid var(--ion-color-error-01); }
+  }

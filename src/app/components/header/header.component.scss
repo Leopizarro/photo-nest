@@ -1,0 +1,46 @@
+.header-title {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 6px;
+    font-family: Fire-Flight;
+    font-size: 38px;
+    .header-wrapper {
+        width: fit-content;
+        cursor: pointer;
+    }
+}
+
+.block {
+    display: block;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+    white-space: nowrap;
+    background-color: #212427;
+    background-image: linear-gradient(to bottom,#292c2f 0,#191c1f 100%);
+    color: whitesmoke;
+    text-shadow: 1px 1px 3px rgb(0 0 0 / 75%);
+    box-shadow: inset 0 0 0 1px rgb(31 31 31 / 66%), 0 0 10px rgb(0 0 0 / 75%), 0 0 10px rgb(0 0 0 / 75%);
+    max-height: 50px;
+}
+
+.rainbow-container {
+    margin-right: 10px;
+}
+
+.user-greetings {
+    margin: 18px 10px;
+}
+
+.peepo-box {
+    height: 100%;
+    width: 30px;
+    margin: 5px 0px;
+}
+
+.user-options {
+    display: flex;
+}

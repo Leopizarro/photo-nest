@@ -1,0 +1,7 @@
+<div class= "infobox-container">
+  <p class="title">{{ title }}</p>
+  <p class="subtitle" *ngIf="isSpraypaintInfoBox">{{ subtitle }}</p>
+  <p class="subtitle" *ngIf="!isSpraypaintInfoBox">{{ subtitle }}</p>
+  <p class="description" *ngIf="isSpraypaintInfoBox">{{ description }}</p>
+  <p class="date">{{ date }}</p>
+</div>

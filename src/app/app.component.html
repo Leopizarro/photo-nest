@@ -1,0 +1,10 @@
+<ion-app>
+  <app-header
+    *ngIf="!isRoute( '/landing', currentRoute )"
+    [headerTitle]="headerTitle"
+    [currentRoute]="currentRoute"
+  ></app-header>
+  <ion-router-outlet
+   [ngClass]="isRoute('/landing', currentRoute ) ? 'landing-layout' : 'page-layout'"
+   ></ion-router-outlet>
+</ion-app>

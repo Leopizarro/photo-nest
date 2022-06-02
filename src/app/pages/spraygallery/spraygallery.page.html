@@ -1,0 +1,16 @@
+<ion-content>
+  <app-rainbow-line></app-rainbow-line>
+  <app-slider 
+    [banners]="banners"
+    [slideOptions]="slideOptions"
+  ></app-slider>
+  <app-rainbow-line></app-rainbow-line>
+  <app-image-grid
+    [hidden]="hideItem"
+    [photos]="photos"
+    [masonryLayout]="false"
+  ></app-image-grid>
+  <app-footer
+    [hidden]="hideItem"
+  ></app-footer>
+</ion-content>

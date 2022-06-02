@@ -1,0 +1,7 @@
+{
+  "name": "photoNest",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,42 @@
+<ion-content>
+  <div class= "page-container">
+    <form class="form" [formGroup]="newpostFormGroup">
+      <app-input
+        [isSelect]="true"
+        [optionsSelect]="galleryInput.options"
+        [control]="galleryControl"
+        >
+      </app-input>
+      <input type="file" accept=".png, .jpg, .jpeg" id="inputFile" (change)="uploadImg($event)">
+      <app-input
+        [title]="titleInput.title"
+        [type]="titleInput.type"
+        [placeholder]="titleInput.placeholder"
+        [control]="titleControl">
+      </app-input>
+      <app-input
+        [title]="subtitleInput.title"
+        [type]="subtitleInput.type"
+        [placeholder]="subtitleInput.placeholder"
+        [control]="subtitleControl">
+      </app-input>
+      <app-input
+        [title]="dateInput.title"
+        [type]="dateInput.type"
+        [control]="dateControl">
+      </app-input>
+      <app-input
+        [isTextArea]="true"
+        [title]="descriptionInput.title"
+        [placeholder]="descriptionInput.placeholder"
+        [control]="descriptionControl">
+      </app-input>
+      <app-button
+      [isDisabled]="!newpostFormGroup.valid"
+      [label]="buttonConstants.label"
+      [buttonClass]="buttonConstants.buttonClass"
+      (click)="uploadNewPost()"
+      ></app-button>
+    </form>
+  </div>
+</ion-content>

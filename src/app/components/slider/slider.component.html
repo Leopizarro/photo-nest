@@ -1,0 +1,21 @@
+<div class="slider-container">
+  <app-slider-navigation class="navigation" (direction)="changeSlide($event)"></app-slider-navigation>
+  <ion-slides #slides class="slides primary-bullets banner-slides" pager="true" [options]="slideOptions">
+    <ion-slide *ngFor="let banner of banners">
+      <div class="info-banner-container">
+        <img class="banner-img" [src]="banner?.information.image.url" alt="">
+        <div [ngClass]="banner.bannerClass">
+          <p *ngIf="banner?.information.title" class="first-line" [innerHTML]="banner?.information.title"></p>
+          <p *ngIf="banner?.information.description" class="second-line" [innerHTML]="banner?.information.description"></p>
+          <div class=button-container *ngIf="banner.information.button">
+            <app-button
+            [label]="banner?.information.button.label"
+            [buttonClass]="banner?.information.button.buttonClass"
+            (click)="goTo(banner?.information.button.route)"
+            ></app-button>
+          </div>
+        </div>
+      </div>
+    </ion-slide>
+  </ion-slides>
+</div>

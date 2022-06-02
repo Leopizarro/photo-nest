@@ -1,0 +1,13 @@
+<div [ngClass]="masonryLayout ? 'masonry-grid' : 'grid'">
+  <div *ngFor="let photo of photos" class="item">
+    <app-photocard
+      [imgUrl] = photo.imgUrl
+      [title] = photo.title
+      [subtitle] = photo.subtitle
+      [description] = photo.description
+      [date] = photo.date
+      [masonryLayout]="masonryLayout"
+      (clickEvent)="showGalleryModal(($event), photos)"
+    ></app-photocard>
+  </div>
+</div>
