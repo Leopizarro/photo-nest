@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[1906],{1906:(D,n,o)=>{o.r(n),o.d(n,{NewpostPageModule:()=>M});var t=o(9808),E=o(4182),s=o(9537),u=o(5632),P=o(4166),a=o(6435);let M=(()=>{class _{}return _.\u0275fac=function(p){return new(p||_)},_.\u0275mod=a.oAB({type:_}),_.\u0275inj=a.cJS({imports:[[t.ez,E.UX,s.Pc,u.h,P.g]]}),_})()}}]);
