@@ -5,7 +5,6 @@ import { GalleryModalComponent } from './gallery-modal.component';
 import { ButtonModule } from '../button/button.module';
 import { InfoBoxModule } from '../info-box/info-box.module';
 import { SliderModule } from '../slider/slider.module';
-import { SliderNavigationModule } from '../slider-navigation/slider-navigation.module';
 
 @NgModule({
   imports: [
@@ -13,8 +12,7 @@ import { SliderNavigationModule } from '../slider-navigation/slider-navigation.m
     IonicModule,
     ButtonModule,
     InfoBoxModule,
-    SliderModule,
-    SliderNavigationModule
+    SliderModule
   ],
   declarations: [],
 })

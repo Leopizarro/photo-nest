@@ -16,7 +16,7 @@ export const BANNERS_SPRAY: BannerInformation[] = [
     },
     {
         id: '2',
-        bannerClass: 'description-container centered-right',
+        bannerClass: 'description-container centered-right visit-mobile-gallery',
         information: {
             id: '2',
             title: '¡Visita la Galería Mobile!',
@@ -51,7 +51,7 @@ export const BANNERS_CELLPHONE: BannerInformation[] = [
     },
     {
         id: '2',
-        bannerClass: 'description-container centered',
+        bannerClass: 'description-container centered visit-spraypaint-gallery',
         information: {
             id: '2',
             title: '¡Visita la Galería Spraypaint!',

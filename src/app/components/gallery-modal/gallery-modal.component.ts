@@ -41,10 +41,13 @@ export class GalleryModalComponent implements OnInit{
 
   ngOnInit() {
     this.isSprayRoute(this.currentRoute);
-    this.reorderImages(this.photoCollection,this.clickedPhotoInfo);
+    this.setSliderInitialSlide(this.photoCollection,this.clickedPhotoInfo);
+    /* this.setClickedImageAsFirst(this.photoCollection,this.clickedPhotoInfo); */
   }
 
-  public reorderImages(photoCollection: IPhotoCard[], photo: IPhotoCard) {
+  /*
+          -----función que toma las fotos anteriores a la clickeada y las coloca al final del array (implementación antes de conocer----
+  public setClickedImageAsFirst(photoCollection: IPhotoCard[], photo: IPhotoCard) {
     this.imagesForModal = [...photoCollection];
     let position = 0;
     this.imagesForModal.forEach(element => {
@@ -53,6 +56,17 @@ export class GalleryModalComponent implements OnInit{
         photoSpliced.forEach(photoItem =>{
           this.imagesForModal.push(photoItem);
         });
+      }
+      position = position + 1;
+    });
+  } */
+
+  public setSliderInitialSlide(photoCollection: IPhotoCard[], photo: IPhotoCard) {
+    this.imagesForModal = [...photoCollection];
+    let position = 0;
+    this.imagesForModal.forEach(element => {
+      if (element.imgUrl === photo.imgUrl){
+        this.sliderOptions.initialSlide = position;
       }
       position = position + 1;
     });

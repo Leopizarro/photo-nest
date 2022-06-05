@@ -10,7 +10,6 @@ import { PhotoCardModule } from 'src/app/components/photocard/photocard.module';
 import { ImageGridModule } from 'src/app/components/image-grid/image-grid.module';
 import { RainbowLineModule } from 'src/app/components/rainbow-line/rainbow-line.module';
 import { FooterModule } from 'src/app/components/footer/footer.module';
-import { InfoBoxModule } from 'src/app/components/info-box/info-box.module';
 
 @NgModule({
   imports: [

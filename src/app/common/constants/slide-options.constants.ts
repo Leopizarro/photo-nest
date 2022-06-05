@@ -8,8 +8,12 @@ export const SLIDE_GENERIC_OPTIONS_HOME = {
 
 export const SLIDE_BASE_OPTIONS = {
   slidesPerView: 1,
-  loop: true,
-  pagination: false
+  initialSlide: 1,
+  loop: false,
+  pagination: false,
+  zoom: {
+    maxRatio: 2
+  }
 };
 
 export const SLIDE_FADE_OPTIONS = {

@@ -38,9 +38,9 @@
 
 .i-logo-color-palette { @extend .background-no-repeat; background-image: url(./assets/color_palette_logo.png);}
 
-.i-landing-spraypaint-background { @extend .background-no-repeat; background-image: url(./assets/cans.jpg)}
+.i-landing-spraypaint-background { @extend .background-no-repeat; background-image: url(./assets/cans1.jpg); background-size: cover;}
 
-.i-landing-cellphone-background { @extend .background-no-repeat; background-image: url(./assets/s21ultra.jpg);}
+.i-landing-cellphone-background { @extend .background-no-repeat; background-image: url(./assets/s21u.jpg); background-size: cover;}
 
 .i-close-icon { @extend .background-no-repeat; background-image: url(./assets/close.png);}
 

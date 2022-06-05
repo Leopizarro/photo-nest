@@ -1,10 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { IModal } from 'src/app/common/interfaces/modal.interface';
 import { IPhotoCard } from 'src/app/common/interfaces/photocard.interface';
 import { ModalService } from 'src/app/services/modal/modal.service';
 import { GalleryModalComponent } from '../gallery-modal/gallery-modal.component';
-import { ModalComponent } from '../modal/modal.component';
 
 @Component({
   selector: 'app-image-grid',
@@ -25,10 +23,6 @@ export class ImageGridComponent implements OnInit {
   ngOnInit() {
     this.currentRoute =  this.route.snapshot.routeConfig.path;
     console.log(this.currentRoute, 'aaa');
-  }
-
-  public showPhotoModal(photoData: IPhotoCard) {
-    this.modalService.presentModal(ModalComponent, photoData);
   }
 
   public showGalleryModal(photoData: IPhotoCard, photoCollection: IPhotoCard[]){
