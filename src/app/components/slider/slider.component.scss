@@ -100,13 +100,17 @@
 }
 
 .visit-mobile-gallery {
+  @media screen and (max-width: 503px) {
+    .second-line {
+      font-size: 19px;
+    }
+  }
   @media screen and (max-width: 451px) {
     .first-line{
       margin-top: 22px;
       font-size: 55px;
     }
     .second-line {
-      font-size: 19px;
       margin-top: 19px;
     }
     .button-container {
