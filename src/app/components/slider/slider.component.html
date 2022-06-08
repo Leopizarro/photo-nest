@@ -3,7 +3,10 @@
   <ion-slides #slides class="slides primary-bullets banner-slides" pager="true" [options]="slideOptions">
     <ion-slide *ngFor="let banner of banners">
       <div class="info-banner-container">
-        <img class="banner-img" [src]="banner?.information.image.url" alt="">
+        <img class="banner-img"
+          [src]="banner?.information.image.urlXL"
+          alt=""
+        >
         <div [ngClass]="banner.bannerClass">
           <p *ngIf="banner?.information.title" class="first-line" [innerHTML]="banner?.information.title"></p>
           <p *ngIf="banner?.information.description" class="second-line" [innerHTML]="banner?.information.description"></p>

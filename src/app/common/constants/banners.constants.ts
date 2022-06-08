@@ -11,6 +11,12 @@ export const BANNERS_SPRAY: BannerInformation[] = [
             imageLocation: 'lcoation',
             image: {
             url: './assets/banner-spray.jpg',
+            urlXS: './assets/spraypaintbanner_576px.jpg',
+            urlS: './assets/spraypaintbanner_768px.jpg',
+            urlM: './assets/spraypaintbanner_992px.jpg',
+            urlL: './assets/spraypaintbanner_1200px.jpg',
+            urlXL: './assets/spraypaintbanner_1920px.jpg',
+            urlXXL: './assets/spraypaintbanner_2560px.jpg',
             },
         }
     },
@@ -30,6 +36,12 @@ export const BANNERS_SPRAY: BannerInformation[] = [
             imageLocation: 'location',
             image: {
             url: './assets/phone-banner2.jpg',
+            urlXS: './assets/phonebanner2_576px.jpg',
+            urlS: './assets/phonebanner2_768px.jpg',
+            urlM: './assets/phonebanner2_992px.jpg',
+            urlL: './assets/phonebanner2_1200px.jpg',
+            urlXL: './assets/phonebanner2_1920px.jpg',
+            urlXXL: './assets/phonebanner2_2560px.jpg',
             },
         }
     },
@@ -46,6 +58,12 @@ export const BANNERS_CELLPHONE: BannerInformation[] = [
             imageLocation: 'lcoation',
             image: {
             url: './assets/phone-banner.jpg',
+            urlXS: './assets/phonebanner_576px.jpg',
+            urlS: './assets/phonebanner_768px.jpg',
+            urlM: './assets/phonebanner_992px.jpg',
+            urlL: './assets/phonebanner_1200px.jpg',
+            urlXL: './assets/phonebanner_1920px.jpg',
+            urlXXL: './assets/phonebanner_2560px.jpg',
             },
         }
     },
@@ -65,6 +83,12 @@ export const BANNERS_CELLPHONE: BannerInformation[] = [
             imageLocation: 'location',
             image: {
             url: './assets/spray1.jpg',
+            urlXS: './assets/spraybanner_576px.jpg',
+            urlS: './assets/spraybanner_768px.jpg',
+            urlM: './assets/spraybanner_992px.jpg',
+            urlL: './assets/spraybanner_1200px.jpg',
+            urlXL: './assets/spraybanner_1920px.jpg',
+            urlXXL: './assets/spraybanner_2560px.jpg',
             },
         }
     },

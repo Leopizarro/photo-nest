@@ -10,6 +10,12 @@ export interface BannerInformation {
     imageLocation?: string;
     image: {
       url: string;
+      urlXS: string;
+      urlS: string;
+      urlM: string;
+      urlL: string;
+      urlXL: string;
+      urlXXL: string;
     };
   };
 }

@@ -10,6 +10,7 @@ export class PhotocardComponent implements OnInit {
   @Input() photoinfo: IPhotoCard;
 
   @Input() imgUrl: string;
+  @Input() thumbnailUrl: string;
   @Input() title: string;
   @Input() subtitle: string;
   @Input() description: string;
@@ -26,6 +27,7 @@ export class PhotocardComponent implements OnInit {
   public emitClickEvent() {
     const modalProps: IPhotoCard = {
       imgUrl: this.imgUrl,
+      thumbnailUrl: this.thumbnailUrl,
       title: this.title,
       subtitle: this.subtitle,
       description: this.description,

@@ -25,7 +25,7 @@ export class ImageGridComponent implements OnInit {
     console.log(this.currentRoute, 'aaa');
   }
 
-  public showGalleryModal(photoData: IPhotoCard, photoCollection: IPhotoCard[]){
+  public showGalleryModal(photoData: IPhotoCard){
     this.modalService.presentGalleryModal(GalleryModalComponent, photoData, this.photos, this.currentRoute);
   }
 }

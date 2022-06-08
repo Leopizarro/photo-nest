@@ -20,7 +20,6 @@ export class SliderComponent extends SlidesComponent {
               private modal: ModalController) {
     super();
   }
-
   public goTo(route: string) {
     this.navService.goTo(route);
   }

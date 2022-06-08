@@ -2,6 +2,7 @@
   <div *ngFor="let photo of photos" class="item">
     <app-photocard
       [imgUrl] = photo.imgUrl
+      [thumbnailUrl] = photo.thumbnailUrl
       [title] = photo.title
       [subtitle] = photo.subtitle
       [description] = photo.description
