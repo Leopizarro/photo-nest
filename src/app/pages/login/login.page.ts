@@ -49,9 +49,8 @@ export class LoginPage implements OnInit {
 
   public signIn() {
     const {email, password} = this.user;
-    console.log('a', email);
     this.authService.loginUser(email, password).then(user => {
-      console.log('Usuario loggeado ! Hola: ', user);
+      console.log('Usuario loggeado !');
       if(!user){
         console.log('credenciales erróneas !!');
         return null;

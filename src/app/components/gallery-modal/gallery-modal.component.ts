@@ -4,6 +4,7 @@ import { UnsubscriptionError } from 'rxjs';
 import { PHOTOCARDS } from 'src/app/common/constants/photocard.constants';
 import { SLIDE_BASE_OPTIONS } from 'src/app/common/constants/slide-options.constants';
 import { IPhotoCard } from 'src/app/common/interfaces/photocard.interface';
+import { LoadingService } from 'src/app/services/loading/loading.service';
 import { SliderComponent } from '../slider/slider.component';
 
 @Component({
@@ -22,15 +23,18 @@ export class GalleryModalComponent implements OnInit{
   public sliderOptions: any;
   public imagesForModal: IPhotoCard[];
   public isSprayGallery: boolean;
+  public hideElement: boolean;
 
 
-  constructor(private modal: ModalController) {
+  constructor(private modal: ModalController,
+              private loadingService: LoadingService) {
     this.clickedPhotoInfo = null;
     this.photoCollection = [];
     this.sliderOptions = SLIDE_BASE_OPTIONS;
     this.imagesForModal = [];
     this.enableInfobox = true;
     this.isSprayGallery = true;
+    this.hideElement = true;
   }
 
   @HostListener('window:resize', ['$event'])
@@ -40,6 +44,7 @@ export class GalleryModalComponent implements OnInit{
 
 
   ngOnInit() {
+    this.loadingService.present2sLoading();
     this.isSprayRoute(this.currentRoute);
     this.setSliderInitialSlide(this.photoCollection,this.clickedPhotoInfo);
     /* this.setClickedImageAsFirst(this.photoCollection,this.clickedPhotoInfo); */
@@ -70,6 +75,7 @@ export class GalleryModalComponent implements OnInit{
       }
       position = position + 1;
     });
+    this.hideElement = false;
   }
 
   public triggerInfobox() {
@@ -97,6 +103,7 @@ export class GalleryModalComponent implements OnInit{
   }
 
   public dismissModal() {
+    this.hideElement = true;
     this.modal.dismiss();
   }
 

@@ -5,7 +5,7 @@
   <div class="close-btn">
     <app-button [buttonClass]="'modal-gallery-option-button i-close-icon'" (click)="dismissModal()">asd</app-button>
   </div>
-  <ion-slides #slides class="slides primary-bullets banner-slides" pager="true" [options]="sliderOptions" zoom>
+  <ion-slides *ngIf="!hideElement" #slides class="slides primary-bullets banner-slides" pager="true" [options]="sliderOptions" zoom>
     <ion-slide *ngFor="let photo of imagesForModal">
       <div class="slider-container swiper-zoom-container">
         <img class="image" [src]='photo.imgUrl' alt="ImagenModal">

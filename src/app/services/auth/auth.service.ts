@@ -45,7 +45,6 @@ export class AuthService {
     const auth = getAuth();
     onAuthStateChanged(auth, (user) => {
       this.userr = user;
-      console.log('userino', this.userr);
     });
     return this.userr;
   }

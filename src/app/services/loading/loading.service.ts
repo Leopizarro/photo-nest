@@ -19,4 +19,13 @@ export class LoadingService {
   public dismissLoading() {
     this.loadingController.dismiss();
   }
+
+  public async present2sLoading() {
+    const loading = await this.loadingController.create({
+      cssClass: 'my-custom-class',
+      message: 'Cargando imagen HQ...',
+      duration: 1500
+    });
+    await loading.present();
+  }
 }
