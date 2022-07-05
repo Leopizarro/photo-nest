@@ -44,7 +44,7 @@ export class GalleryModalComponent implements OnInit{
 
 
   ngOnInit() {
-    this.loadingService.present2sLoading();
+    /* this.loadingService.present2sLoading(); */
     this.isSprayRoute(this.currentRoute);
     this.setSliderInitialSlide(this.photoCollection,this.clickedPhotoInfo);
     /* this.setClickedImageAsFirst(this.photoCollection,this.clickedPhotoInfo); */
